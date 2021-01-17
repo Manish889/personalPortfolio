@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+}
+
+.designer-txt {
+    color: #16c79a;
+
+}
+
+/* nav-bar */
+
+.my-name {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.rawat {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.my-nav {
+    background-color: #16c79a;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+/* main-section */
+
+#main {
+    background-color: #cfdac8;
+}
+
+.homepage-text {
+    padding: 20px;
+    position: relative;
+    top: 90px;
+   
+}
+
+.homepage-img {
+    padding: 20px;
+    position: relative;
+    top: 40px;
+}
+
+.main-btn {
+    padding-top: 20px;
+}
+
+.designer-txt {
+    text-decoration: underline;
+}
+
+.front-line {
+    height: 5px;
+    width: auto;
+    background-color: #a2d0c1;
+    top: 550px;
+}
+/*                   */
+
+.bottom-text {
+    display: flex;
+    justify-content: center;
+    padding: 5px 7px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.line {
+    padding-top: 150px;
+}
+
+/* grid */
+
+.grid {
+    position: relative;
+}
+
+.grid-txt {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+.dot {
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* about-section */
+
+.about {
+   text-align: center;
+}
+
+.about-1 {
+    color: #495464;
+    padding: 5px 7px;
+}
+
+/* middle-section */
+
+.middle-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* card */
+.card-me {
+    background-color: #11698e;
+    width: auto;
+    font-size: 1.2rem;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* footer */
+.footer {
+    padding: 100px 30px;
+    background-color: #00303f;
+}
+
+.site-map {
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 60px;
+}
+
+.site-map-link {
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.follow-me {
+    color: #fff;
+    text-align: center;
+    font-size: 2.7rem;
+    padding: 10px 50px;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    background-color: #373a40;
+    padding: 30px 0;
+}
