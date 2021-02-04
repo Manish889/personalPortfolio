@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     text-align: center;
@@ -27,6 +31,7 @@ p {
 
 .my-nav {
     background-color: #16c79a;
+    position: fixed;
 }
 
 .nav-link {
@@ -96,15 +101,54 @@ p {
     width: 40%;
     margin: auto;
 }
+@media (max-width: 600px) {
+    .about-1 {
+    display: block;
+    width: 100%;
+    }
+}
 
 .about-txt {
     margin-bottom: 20px;
+}
+
+.about-front {
+    text-align: center;
 }
 
 /* middle-section */
 
 .middle-section {
     padding: 100px 0;
+}
+
+.about {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.about:hover {
+    border-radius: .5rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    transition: box-shadow .5s;
+}
+
+.work:hover {
+    border-radius: .5rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    transition: box-shadow .5s;
+}
+
+.resume-me:hover {
+    border-radius: .5rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    transition: box-shadow .5s;
+}
+
+.contact:hover {
+    border-radius: .5rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    transition: box-shadow .5s;
 }
 
 /* card */
@@ -193,9 +237,10 @@ label {
 /* my-work */
 
 .my-project {
-    height: 400px;
     width: auto;
+    margin-bottom: 50px;
 }
+
 
 /* my-resume */
 .resume {
