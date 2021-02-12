@@ -63,11 +63,16 @@ p {
     text-decoration: underline;
 }
 
+.front-img {
+    width: 360px;
+    height: 400px;
+}
 .front-line {
     height: 5px;
     width: auto;
     background-color: #a2d0c1;
-    top: 550px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 /**********************************/
@@ -114,6 +119,11 @@ p {
 
 .about-front {
     text-align: center;
+}
+
+.about-img {
+    width: 300px;
+    height: 200px;
 }
 
 /* middle-section */
