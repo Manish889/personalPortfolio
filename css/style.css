@@ -46,6 +46,12 @@ p {
     justify-content: center;
 }
 
+@media(max-width: 700px) {
+    .main-page {
+        display: block;
+    }
+}
+
 /* top-button */
 
 .top-btn {
@@ -107,6 +113,12 @@ p {
     background-color: #a2d0c1;
     margin-top: 300px;
     margin-bottom: 50px;
+}
+
+@media(max-width: 700px) {
+    .front-line {
+        margin-top: 40px;
+    }
 }
 
 /**********************************/
