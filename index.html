@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
   <meta charset="UTF-8">
@@ -25,6 +25,9 @@
   <!-- fevicon -->
   <link rel="icon" href="img/favicon.png">
 </head>
+
+<!-- Aos -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <body>
 
@@ -64,14 +67,18 @@
 
   </header>
 
-  <!--  -->
+  <!-- back-to-top-button -->
+
+  <div class="top-btn">
+    <a href="#"> <img src="img/white-arrow-black-circle.png" alt=""> </a>
+  </div> 
+
+  <!-- day=night-switcher -->
 
   <!-- homepage -->
 
   <section id="main">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
+    <div class="main-page">
             <div class="homepage-text">
               <h1>I am a Web Developer <br> and <span class="designer-txt">Designer</span>.</h1>
               <div class="my-name">
@@ -86,16 +93,13 @@
                 </div>
               </div>
             </div>
-        </div>
-
-        <!--  -->
-
-        <div class="col-lg-6 homepage-img">
+        <div class="homepage-img">
             <img class="front-img" src="img/hello.svg"  alt="my-img">
         </div>
       </div>
-    </div>
 
+
+<!-- line -->
       <div class="front-line">
       </div>
 
@@ -131,16 +135,16 @@
       <div class="middle-section">
 
         <!-- about -->
-        <div class="container">
+        <div class="container"">
           <div class="row">
 
-            <div class="col-lg-4 about">
+            <div class="about">
               <div class="about-front">
                 <img class="about-img" src="img/about.svg" alt="">
               </div>
               <div class="about-txt">
                 <div>
-                  <p>About Me</p>
+                  <h3>About Me</h3>
                  <p> Hiii, My name is Manish rawat.</p>
                 </div>
                 <button class="btn btn-success btn-lg">
@@ -153,13 +157,13 @@
 
 
             <!-- work-section -->
-            <div class="col-lg-4 work about">
-              <div class="mywork-front">
+            <div class="about" data-aos="fade-right">
+              <div class="about-front">
                 <img class="about-img" src="img/mywork.svg" alt="">
               </div>
                 <div class="about-txt">
                   <div>
-                    <p>My work</p>
+                    <h3>My work</h3>
                   <p>I love to build Website and make them beautiful.</p>  
                   </div>
                   <button class="btn btn-success btn-lg">
@@ -171,13 +175,13 @@
                  
 
             <!-- resume-section -->
-            <div class="col-lg-4 resume-me about">
+            <div class="resume-me about" data-aos="fade-left">
               <div class="about-front">
                 <img class="about-img" src="img/vectorstock_31292588.png" alt="">
               </div>
                 <div class="about-txt">
                   <div>
-                    <p>My Resume</p>
+                    <h3>My Resume</h3>
                    <p>Please, Have a look at my Resume</p> 
                   </div>
                    <button class="btn btn-success btn-lg">
@@ -187,13 +191,13 @@
             </div>
 
             <!-- contact-section -->
-            <div class="col-lg contact about">
+            <div class="contact about" data-aos="fade-right">
               <div class="about-front">
                 <img class="about-img" src="img/contact.svg" alt="">
               </div>
                 <div class="about-txt">
                   <div>
-                    <p>Contact Me</p>
+                    <h3>Contact Me</h3>
                     <p>If you Willing to know more about me kindly contact me.</p>
                   </div>
                   <div class="about-1">
@@ -215,7 +219,7 @@
 
       <div class="card-me container-fluid text-white">
         <p>Thank you for visiting my website.</p>
-        <button class="btn btn-success">
+        <button class="btn btn-primary btn-lg">
           Contact Me
         </button>
         <h3>Manish Rawat.</h3>
@@ -255,7 +259,7 @@
         <a class="footer-link" href="#"><i class="fab fa-whatsapp"></i></a>
       </div>
 
-      <div class="card-me copyright">
+      <div class="copyright">
         <p>&copy;Made by Manish Rawat. 2020</p>
           <a class="footer-link" href="#">Back to Top</a>&nbsp; &nbsp;
           <a class="footer-link" href="#">Privacy</a>
@@ -264,6 +268,19 @@
 
   </footer>
 
+ 
+    <!-- my-js -->
+    <script src="js/index.js"></script>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 900 // values from 0 to 3000, with step 50ms
+      });
+  </script>
 </body>
 
 </html>
