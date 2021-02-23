@@ -12,8 +12,13 @@ p {
 }
 
 .designer-txt {
-    color: #16c79a;
+    color: #ca3e3e;
+}
 
+.homepage h1 {
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: 800;
 }
 
 /* nav-bar */
@@ -29,28 +34,14 @@ p {
     font-weight: normal;
 }
 
-.my-nav {
-    background-color: #16c79a;
-    position: fixed;
-}
 
 .nav-link {
     font-weight: 600;
 }
 
+
 /* main-page */
 
-.main-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media(max-width: 700px) {
-    .main-page {
-        display: block;
-    }
-}
 
 /* top-button */
 
@@ -63,22 +54,25 @@ p {
    width: 40%;
    height: 40%;
 }
-@media(max-width: 700px) {
-    .top-btn img {
-        width: 50%;
-        height: 50%;
-    }
-    .top-btn {
-        left: 85%;
-        top: 88%;
-    }
-}
 
 /* day-night-btn */
 
 /* *************************************************** */
 
 /* main-section */
+#main {
+    padding-top: 25vh;
+    background: #DA22FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.homepage {
+    padding: 15px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 
 
 .homepage-text {
@@ -89,11 +83,6 @@ p {
 
 }
 
-.homepage-img {
-    padding: 20px;
-    position: relative;
-    top: 40px;
-}
 
 .main-btn {
     padding-top: 20px;
@@ -103,10 +92,6 @@ p {
     text-decoration: underline;
 }
 
-.front-img {
-    width: 360px;
-    height: 400px;
-}
 .front-line {
     height: 5px;
     width: auto;
@@ -115,20 +100,11 @@ p {
     margin-bottom: 50px;
 }
 
-@media(max-width: 700px) {
-    .front-line {
-        margin-top: 40px;
-    }
-}
 
 /**********************************/
 
 
 /* grid */
-
-.grid {
-    position: relative;
-}
 
 .grid-txt {
     font-size: 1.5rem;
@@ -143,16 +119,9 @@ p {
 /* about-section */
 
 .about-1 {
-    color: #495464;
     padding: 5px 7px;
     width: 70%;
     margin: auto;
-}
-@media (max-width: 600px) {
-    .about-1 {
-    display: block;
-    width: 100%;
-    }
 }
 
 .about-txt h3 {
@@ -172,28 +141,31 @@ p {
 /* middle-section */
 
 .middle-section {
-    max-width: 1200px;
     margin: auto;
     margin-top: 50px;
 }
 
 .about {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .container .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    background: #e7e6e1;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-@media(max-width:700px){
-    .container .about {
-        display: block;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+.container .about:nth-child(odd) {
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* for latest browsers*/
+}
+.container .about:nth-child(even) {
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6FB1FC, #4364F7, #0052D4); /* for latest browsers*/
 }
 
 .container .about:nth-child(even) .about-front {
@@ -214,7 +186,7 @@ p {
 
 
 .card-me {
-    background-color: #11698e;
+    background: #0052D4;
     width: auto;
     font-size: 1.2rem;
     height: auto;
@@ -226,7 +198,7 @@ p {
 
 /* footer */
 .footer {
-    padding: 100px 30px;
+    padding-top: 60px;
     background-color: #00303f;
 }
 
@@ -249,14 +221,10 @@ p {
 .follow-me {
     color: #fff;
     font-size: 2.7rem;
-    padding: 10px 50px;
 }
 
 .copyright {
     color: white;
-    position: relative;
-    top: 80px;
-    padding: 10px 0;
 }
 .footer-link {
     text-decoration: none;
@@ -309,4 +277,33 @@ label {
     text-align: left;
     width: 50%;
     margin: auto;
+}
+
+/* all-media- quares */
+
+@media(max-width:700px){
+    .container .about {
+        display: block;
+    }
+    .about-1 {
+        display: block;
+        width: 100%;
+        }
+        .front-line {
+            margin-top: 40px;
+        }
+        .homepage {
+            margin-top: 8vh;
+        }
+        .top-btn img {
+            width: 50%;
+            height: 50%;
+        }
+        .top-btn {
+            left: 85%;
+            top: 88%;
+        }
+        .my-nav {
+            background: #16c79a;
+        }
 }
