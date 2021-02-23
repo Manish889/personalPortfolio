@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 body {
     text-align: center;
-    color: #000;
 }
 p {
     font-family: 'Poppins', sans-serif;
@@ -23,7 +23,7 @@ p {
 /* nav-bar */
 
 .my-nav {
-    background: #1561db;
+    background: #15db6e;
 }
 
 .my-name {
@@ -33,6 +33,7 @@ p {
 
 
 .rawat {
+    color: #000;
     font-size: 0.8rem;
     text-decoration: underline;
     font-weight: normal;
@@ -88,7 +89,6 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     position: relative;
     top: 90px;
     text-align: left;
-
 }
 
 
@@ -103,8 +103,8 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
 .front-line {
     height: 5px;
     width: auto;
-    background-color: #a2d0c1;
-    margin-top: 300px;
+    background-color: #9733EE;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -195,7 +195,7 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
 
 
 .card-me {
-    background: #0052D4;
+    background-color: #15db6e;      
     width: auto;
     font-size: 1.2rem;
     height: auto;
