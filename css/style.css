@@ -8,12 +8,10 @@ body {
     text-align: center;
 }
 p {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
 }
 
-.designer-txt {
-    color: #ca3e3e;
-}
 
 .homepage h1 {
     font-family: cursive;
@@ -23,10 +21,15 @@ p {
 
 /* nav-bar */
 
+.my-nav {
+    background: #1561db;
+}
+
 .my-name {
     font-size: 2.6rem;
     font-weight: 700;
 }
+
 
 .rawat {
     font-size: 0.8rem;
@@ -36,7 +39,7 @@ p {
 
 
 .nav-link {
-    font-weight: 600;
+    font-weight: 620;
 }
 
 
@@ -72,6 +75,10 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     padding: 15px;
     text-align: left;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 1rem;
 }
 
 
@@ -124,19 +131,20 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     margin: auto;
 }
 
+.about h3 {
+    font-size: 2rem;
+}
+
 .about-txt h3 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.about-front {
-    text-align: center;
-}
-
 .about-img {
-    width: 300px;
+    width: 230px;
     height: 200px;
 }
+
 
 /* middle-section */
 
@@ -202,30 +210,23 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     background-color: #00303f;
 }
 
-.site-map {
-    color: white;
-    position: relative;
-    bottom: 60px;
-}
-
-.site-map p {
+.follow-me {
+    display: flex;
+    align-items: center;
+    color: #fff;
     font-size: 2rem;
 }
-
-.site-map-link {
-    text-decoration: none;
-    color: gray;
-    cursor: pointer;
-}
-
-.follow-me {
-    color: #fff;
-    font-size: 2.7rem;
+.follow-me p {
+    margin: 14px 20px;
 }
 
 .copyright {
+    display: flex;
     color: white;
 }
+.copyright .footer-link {margin: 5px 20px;
+}
+
 .footer-link {
     text-decoration: none;
     color: #fff;
@@ -305,5 +306,30 @@ label {
         }
         .my-nav {
             background: #16c79a;
+        }
+        #main {
+            padding-top: 1vh;
+        }
+        .container .about:nth-child(odd) {
+            box-shadow: none;
+            background: #DA22FF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+        }
+        .container .about:nth-child(even) {
+            box-shadow: none;
+            background: #DA22FF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+        }
+        .container .about .about-front {
+            background: #f1f1f1;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .about-txt {
+            text-align: left;
+        }
+        .about > div {
+            padding: 5px 5px;
         }
 }
