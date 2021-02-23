@@ -24,10 +24,11 @@
 
   <!-- fevicon -->
   <link rel="icon" href="img/favicon.png">
-</head>
 
-<!-- Aos -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- google-fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,500&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
@@ -64,7 +65,6 @@
         </div>
       </div>
     </nav>
-
   </header>
 
   <!-- back-to-top-button -->
@@ -78,30 +78,29 @@
   <!-- homepage -->
 
   <section id="main">
-    <div class="main-page">
-            <div class="homepage-text">
+
+    <div class="container homepage">
+      <div class="row">
+            <div class="col-lg-6">
               <h1>I am a Web Developer <br> and <span class="designer-txt">Designer</span>.</h1>
-              <div class="my-name">
                 <h2>Manish Rawat.</h2>
-              </div>
-              <div class="intro-txt">
                 <h5>hello, I am a Self-taught Developer. <br> I was born in Uttarakhand, Currently I am in New Delhi,
                   India.
                 </h5>
                 <div class="main-btn">
                   <button class="btn btn-success btn-lg">Contact Me</button>
                 </div>
-              </div>
             </div>
-        <div class="homepage-img">
-            <img class="front-img" src="img/hello.svg"  alt="my-img">
-        </div>
+            <div class="col-lg-6">
+              <img src="img/hello.svg" alt="">
+            </div>
+          </div>
       </div>
 
 
-<!-- line -->
+
       <div class="front-line">
-      </div>
+      </div> 
 
 
       <!--grid  -->
@@ -130,7 +129,7 @@
         </div>
       </div>
 
-      <!--  -->
+      
 
       <div class="middle-section">
 
@@ -157,7 +156,7 @@
 
 
             <!-- work-section -->
-            <div class="about" data-aos="fade-right">
+            <div class="about" >
               <div class="about-front">
                 <img class="about-img" src="img/mywork.svg" alt="">
               </div>
@@ -175,7 +174,7 @@
                  
 
             <!-- resume-section -->
-            <div class="resume-me about" data-aos="fade-left">
+            <div class="resume-me about" ">
               <div class="about-front">
                 <img class="about-img" src="img/vectorstock_31292588.png" alt="">
               </div>
@@ -191,7 +190,7 @@
             </div>
 
             <!-- contact-section -->
-            <div class="contact about" data-aos="fade-right">
+            <div class="contact about" >
               <div class="about-front">
                 <img class="about-img" src="img/contact.svg" alt="">
               </div>
@@ -251,7 +250,9 @@
         </div>
       </div>
 
-      <div class="container-fluid follow-me">
+      <div class="container">
+        <div class="row">
+      <div class=" col-lg-6 follow-me">
         <p>Follow Me</p>
         <a class="footer-link" href="https://www.linkedin.com/in/manish-rawat-77b045190/"> <i class="fab fa-linkedin"></i></a>&nbsp; &nbsp;
         <a class="footer-link" href="#"> <i class="fab fa-instagram"></i></a>&nbsp; &nbsp;
@@ -259,28 +260,20 @@
         <a class="footer-link" href="#"><i class="fab fa-whatsapp"></i></a>
       </div>
 
-      <div class="copyright">
+      <div class=" col-lg-6 copyright">
         <p>&copy;Made by Manish Rawat. 2020</p>
           <a class="footer-link" href="#">Back to Top</a>&nbsp; &nbsp;
           <a class="footer-link" href="#">Privacy</a>
       </div>
     </div>
+   </div>
+  </div>
 
   </footer>
 
- 
-    <!-- my-js -->
-    <script src="js/index.js"></script>
+<!-- my-js -->
+<script src="js/index.js"></script>
 
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-        offset: 400, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 900 // values from 0 to 3000, with step 50ms
-      });
-  </script>
 </body>
 
 </html>
