@@ -3,10 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+body.night,
+html.night {
+  background-color: #131417;
+  color: #afafbf;
+  scroll-behavior: smooth;
+}
 
 body {
   text-align: center;
-  scroll-behavior: smooth;
 }
 p {
   font-family: "Poppins", sans-serif;
@@ -33,6 +38,11 @@ p {
   position: relative;
   left: 180px;
 }
+.navbar-text {
+  position: relative;
+  right: 10px;
+  margin-bottom: 7px;
+}
 .navbar ul {
   padding: 10px 30px;
 }
@@ -48,24 +58,114 @@ p {
 }
 
 .nav-link {
-  font-weight: 620;
+  font-weight: 600;
 }
 
 /* main-page */
 
 /* top-button */
 
-.top-btn {
-  position: fixed;
-  left: 90%;
-  top: 85%;
-}
 .top-btn img {
   width: 40%;
   height: 40%;
 }
 
 /* day-night-btn */
+
+.switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-wrapper .sun {
+  background: url(../img/moon.png) no-repeat center;
+  background-size: 100%;
+}
+
+body.night .switch-wrapper .sun,
+html.night .switch-wrapper .sun {
+  background: url(../img/moon-white.svg) no-repeat center;
+  background-size: 100%;
+}
+
+.switch-wrapper .moon,
+.switch-wrapper .sun {
+  width: 17px;
+  height: 17px;
+}
+
+.switch-wrapper .toggle-wrapper {
+  margin: 10px;
+}
+
+.switch-wrapper .toggle-wrapper #switch {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.switch-wrapper .toggle-wrapper input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.switch-wrapper .toggle-wrapper label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 45px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.switch-wrapper .toggle-wrapper label:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 20px;
+  height: 22px;
+  background: #fff;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.switch-wrapper .toggle-wrapper input:checked + label {
+  background: #bada55;
+}
+
+.switch-wrapper .toggle-wrapper input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.switch-wrapper .toggle-wrapper label:active:after {
+  width: 0px;
+}
+
+.switch-wrapper .moon {
+  background: url(../img/white_sun_with_rays.png) no-repeat center;
+  background-size: 100%;
+}
+
+body.night .switch-wrapper .moon,
+html.night .switch-wrapper .moon {
+  background: url(../img/sun-white.svg) no-repeat center;
+  background-size: 100%;
+}
+
+.switch-wrapper a,
+body.night .switch-wrapper a {
+  color: #007bff;
+  margin: 15px;
+}
 
 /* *************************************************** */
 
@@ -94,7 +194,7 @@ p {
   border-radius: 2rem;
   color: #f1f1f1;
   font-size: 1.1rem;
-
+  isolation: isolate;
   border: 2px solid #da22ff;
   text-decoration: none;
 }
@@ -105,6 +205,7 @@ p {
   color: #000;
   cursor: pointer;
   text-decoration: none;
+  isolation: isolate;
 }
 .homepage a {
   position: relative;
@@ -120,12 +221,14 @@ p {
   width: auto;
   background-color: #9733ee;
   margin-top: 180px;
+  isolation: isolate;
 }
 .line {
   height: 4px;
   max-width: 100%;
   background-color: #da22ff;
   margin-bottom: 3rem;
+  isolation: isolate;
 }
 
 /**********************************/
@@ -140,6 +243,7 @@ p {
 .dot {
   color: red;
   font-size: 2.5rem;
+  isolation: isolate;
 }
 
 /* about-section */
@@ -182,6 +286,7 @@ p {
   border-radius: 1rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  isolation: isolate;
 }
 .about .about-front:hover {
   cursor: pointer;
@@ -190,10 +295,6 @@ p {
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   transition: 0.3s;
   transform: scale(1.01);
-}
-
-.container .about:nth-child(even) .about-front {
-  order: 2;
 }
 
 .about > div {
@@ -234,18 +335,28 @@ p {
 /* card */
 
 .card-me {
-  background-color: #da22ff;
+  background-image: url(../img/bg2.jpg);
+  background-position: center;
+  background-size: contain;
   width: auto;
   font-size: 1.2rem;
   height: auto;
   padding: 15px;
   margin-top: 30px;
+  isolation: isolate;
+}
+.card-me h3 {
+  background-color: #f1f1f1;
+  display: inline-block;
+  margin: 1rem 1.6rem;
+  padding: 5px;
 }
 
 /* footer */
 .footer {
   padding-top: 60px;
   background-color: #00303f;
+  isolation: isolate;
 }
 
 .follow-me {
@@ -381,6 +492,18 @@ label {
   .list-nav {
     position: static;
   }
+  .navbar-text {
+    position: static;
+  }
+  .top-btn {
+    position: fixed;
+    left: 82%;
+    top: 78%;
+  }
+  .switch-wrapper {
+    position: absolute;
+    right: 80px;
+  }
 }
 
 /* media-rule for 900px */
@@ -390,7 +513,11 @@ label {
     border-bottom: 4px solid rgb(1, 255, 255);
   }
   .navbar .nav1:hover {
-    border-width: 80%;
     border-bottom: 2px solid rgb(1, 255, 255);
+  }
+  .top-btn {
+    position: fixed;
+    left: 91.4%;
+    top: 78%;
   }
 }
