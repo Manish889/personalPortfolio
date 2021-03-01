@@ -1,63 +1,57 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    text-align: center;
+  text-align: center;
 }
 p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
 }
 
-
 .homepage h1 {
-    font-family: cursive;
-    font-size: 3rem;
-    font-weight: 800;
+  font-family: cursive;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 /* nav-bar */
 
 .my-nav {
-    background: #15db6e;
+  background: #15db6e;
 }
 
 .my-name {
-    font-size: 2.6rem;
-    font-weight: 700;
+  font-size: 2.6rem;
+  font-weight: 700;
 }
-
 
 .rawat {
-    color: #000;
-    font-size: 0.8rem;
-    text-decoration: underline;
-    font-weight: normal;
+  color: #000;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  font-weight: normal;
 }
-
 
 .nav-link {
-    font-weight: 620;
+  font-weight: 620;
 }
 
-
 /* main-page */
-
 
 /* top-button */
 
 .top-btn {
-   position: fixed;
-   left: 90%;
-   top: 85%;
+  position: fixed;
+  left: 90%;
+  top: 85%;
 }
 .top-btn img {
-   width: 40%;
-   height: 40%;
+  width: 40%;
+  height: 40%;
 }
 
 /* day-night-btn */
@@ -66,273 +60,291 @@ p {
 
 /* main-section */
 #main {
-    padding-top: 25vh;
-    background: #DA22FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  padding-top: 25vh;
 }
 
 .homepage {
-    padding: 15px;
-    text-align: left;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    background: #0052D4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 1rem;
+  padding: 15px;
+  text-align: left;
 }
-
 
 .homepage-text {
-    padding: 20px;
-    position: relative;
-    top: 90px;
-    text-align: left;
+  padding: 20px;
+  position: relative;
+  top: 90px;
+  text-align: left;
 }
 
-
 .main-btn {
-    padding-top: 20px;
+  padding: 8px 10px;
+  background-color: #da22ff;
+  border-radius: 2rem;
+  color: #f1f1f1;
+  font-size: 1.1rem;
+
+  border: 2px solid #da22ff;
+  text-decoration: none;
+}
+.main-btn:hover {
+  background-color: #fff;
+  border: 2px solid #da22ff;
+  transition: 400ms;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.homepage a {
+  position: relative;
+  top: 15px;
 }
 
 .designer-txt {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .front-line {
-    height: 5px;
-    width: auto;
-    background-color: #9733EE;
-    margin-top: 100px;
-    margin-bottom: 50px;
+  height: 5px;
+  width: auto;
+  background-color: #9733ee;
+  margin-top: 180px;
 }
 
-
 /**********************************/
-
 
 /* grid */
 
 .grid-txt {
-    font-size: 1.5rem;
-    font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .dot {
-    color: red;
-    font-size: 2.5rem;
+  color: red;
+  font-size: 2.5rem;
 }
 
 /* about-section */
 
-.about-1 {
-    padding: 5px 7px;
-    width: 70%;
-    margin: auto;
+.about .about-txt:nth-child(even) {
+  text-align: left;
+  margin-left: 80px;
 }
 
 .about h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .about-txt h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
-
-.about-img {
-    width: 230px;
-    height: 200px;
+.about-txt p {
+  font-size: 1.3rem;
 }
-
 
 /* middle-section */
 
 .middle-section {
-    margin: auto;
-    margin-top: 50px;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .about {
-    margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .container .about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-radius: 1rem;
 }
-
-.container .about:nth-child(odd) {
-    background: #0052D4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* for latest browsers*/
+.about .about-front {
+  background: #f1f1f1;
+  border-radius: 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.container .about:nth-child(even) {
-    background: #0052D4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #6FB1FC, #4364F7, #0052D4); /* for latest browsers*/
+.about .about-front:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: 0.3s;
+  transform: scale(1.01);
 }
 
 .container .about:nth-child(even) .about-front {
-    order: 2;
+  order: 2;
 }
 
 .about > div {
-    padding: 30px 10px;
+  padding: 30px 10px;
 }
 
 .container img {
-    width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
 }
 
-
+/* carousel */
+.carousel {
+  margin-bottom: 50px;
+}
+.carousel-item {
+  background: #000;
+  height: 32rem;
+  position: relative;
+}
+.carousel-txt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+.overlay-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+}
 /* card */
 
-
 .card-me {
-    background-color: #DA22FF;      
-    width: auto;
-    font-size: 1.2rem;
-    height: auto;
-    padding: 15px;
-    margin-top: 30px;
+  background-color: #da22ff;
+  width: auto;
+  font-size: 1.2rem;
+  height: auto;
+  padding: 15px;
+  margin-top: 30px;
 }
-
-
 
 /* footer */
 .footer {
-    padding-top: 60px;
-    background-color: #00303f;
+  padding-top: 60px;
+  background-color: #00303f;
 }
 
 .follow-me {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 2rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
 }
 .follow-me p {
-    margin: 14px 20px;
+  margin: 14px 20px;
 }
 
 .copyright {
-    display: flex;
-    color: white;
+  display: flex;
+  color: white;
 }
-.copyright .footer-link {margin: 5px 20px;
+.copyright .footer-link {
+  margin: 5px 20px;
 }
 
 .footer-link {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* about-page */
 
 input {
-    padding: 12px 20px;
+  padding: 12px 20px;
 }
 
 .form {
-    width: 50%;
-    margin: auto;
-    padding: 10px 10px;
+  width: 50%;
+  margin: auto;
+  padding: 10px 10px;
 }
 
 #form {
-    background-color: #16c79a;
-    border-radius: .75rem;
+  background-color: #16c79a;
+  border-radius: 0.75rem;
 }
 
 label {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .email {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .user-name {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .user-message {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 /* my-work */
 
 .my-project {
-    width: auto;
-    margin-bottom: 50px;
+  width: auto;
+  margin-bottom: 50px;
 }
-
 
 /* my-resume */
 .resume {
-    text-align: left;
-    width: 50%;
-    margin: auto;
+  text-align: left;
+  width: 50%;
+  margin: auto;
 }
 
 /* all-media- quares */
 
-@media(max-width:700px){
-    .container .about {
-        display: block;
-    }
-    .about-1 {
-        display: block;
-        width: 100%;
-        }
-        .front-line {
-            margin-top: 40px;
-        }
-        .homepage {
-            margin-top: 8vh;
-        }
-        .top-btn img {
-            width: 50%;
-            height: 50%;
-        }
-        .top-btn {
-            left: 85%;
-            top: 88%;
-        }
-        .my-nav {
-            background: #16c79a;
-        }
-        #main {
-            padding-top: 1vh;
-        }
-        .container .about:nth-child(odd) {
-            box-shadow: none;
-            background: #DA22FF;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-        }
-        .container .about:nth-child(even) {
-            box-shadow: none;
-            background: #DA22FF;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-        }
-        .container .about .about-front {
-            background: #f1f1f1;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
-        .about-txt {
-            text-align: left;
-            color: #fff;
-            font-weight: 500;
-        }
-        .about > div {
-            padding: 5px 5px;
-        }
+@media (max-width: 700px) {
+  .front-txt {
+    margin-bottom: 50px;
+  }
+  .container .about {
+    display: block;
+  }
+  .about-1 {
+    display: block;
+    width: 100%;
+  }
+  .front-line {
+    margin-top: 0;
+  }
+  .homepage {
+    margin-top: 8vh;
+  }
+  .top-btn img {
+    width: 50%;
+    height: 50%;
+  }
+  .top-btn {
+    left: 85%;
+    top: 88%;
+  }
+  .my-nav {
+    background: #15db6e;
+  }
+  #main {
+    padding-top: 1vh;
+  }
+  .container .about .about-front {
+    background: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .about-txt {
+    text-align: left;
+  }
+  .about > div {
+    padding: 5px 5px;
+  }
+  .about .about-txt:nth-child(even) {
+    text-align: left;
+    margin-left: 10px;
+  }
 }
