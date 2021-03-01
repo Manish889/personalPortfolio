@@ -13,7 +13,7 @@ p {
 }
 
 .homepage h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1.02;
 }
@@ -108,6 +108,12 @@ p {
   background-color: #9733ee;
   margin-top: 180px;
 }
+.line {
+  height: 4px;
+  max-width: 80%;
+  background-color: #da22ff;
+  margin-bottom: 3rem;
+}
 
 /**********************************/
 
@@ -124,6 +130,9 @@ p {
 }
 
 /* about-section */
+.about {
+  margin-bottom: 4rem;
+}
 
 .about .about-txt:nth-child(even) {
   text-align: left;
@@ -139,7 +148,7 @@ p {
   margin-bottom: 20px;
 }
 .about-txt p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* middle-section */
@@ -147,10 +156,6 @@ p {
 .middle-section {
   margin: auto;
   margin-top: 50px;
-}
-
-.about {
-  margin-bottom: 100px;
 }
 
 .container .about {
@@ -184,7 +189,7 @@ p {
 
 .container img {
   width: 100%;
-  height: 300px;
+  height: 270px;
 }
 
 /* carousel */
@@ -346,5 +351,8 @@ label {
   .about .about-txt:nth-child(even) {
     text-align: left;
     margin-left: 10px;
+  }
+  .line {
+    visibility: hidden;
   }
 }
