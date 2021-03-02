@@ -499,6 +499,7 @@ label {
     position: fixed;
     left: 82%;
     top: 78%;
+    z-index: 1000;
   }
   .switch-wrapper {
     position: absolute;
