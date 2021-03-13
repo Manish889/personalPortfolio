@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3.5rem;
   transition: 0.5s;
   transform-origin: left;
   transform: scaleX(0);
@@ -30,12 +30,13 @@
 }
 .about-txt h2 {
   position: relative;
-  margin: 5px 0 0;
+  margin: 5px 0 8px;
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   transition: 0.5s;
   transform-origin: right;
   transform: scaleX(0);
+  display: inline-block;
 }
 
 .about-txt h2[data-scroll="in"] {
