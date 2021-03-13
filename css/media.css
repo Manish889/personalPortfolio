@@ -1,0 +1,93 @@
+/* all-media- quares */
+
+@media (max-width: 1000px) {
+  .homepage h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.02;
+    margin-bottom: 2rem;
+  }
+  .front-txt {
+    margin-bottom: 50px;
+  }
+  .container .about {
+    display: block;
+  }
+  .about-1 {
+    display: block;
+    width: 100%;
+  }
+  .front-line {
+    margin-top: 0;
+  }
+  .homepage {
+    margin-top: 8vh;
+  }
+  .top-btn img {
+    width: 50%;
+    height: 50%;
+  }
+  .top-btn {
+    left: 85%;
+    top: 88%;
+  }
+  .my-nav {
+    background: #15db6ef1;
+  }
+  #main {
+    padding-top: 1vh;
+  }
+  .container .about .about-front {
+    background: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .about-txt {
+    text-align: left;
+  }
+  .about > div {
+    padding: 5px 5px;
+  }
+  .about .about-txt:nth-child(even) {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .line {
+    visibility: hidden;
+  }
+  .my-name {
+    font-size: 1.25rem;
+    position: static;
+  }
+  .list-nav {
+    position: static;
+  }
+  .navbar-text {
+    position: static;
+  }
+  .top-btn {
+    position: fixed;
+    left: 82%;
+    top: 78%;
+    z-index: 1000;
+  }
+  .switch-wrapper {
+    position: absolute;
+    right: 80px;
+  }
+}
+
+/* media-rule for 900px */
+
+@media (min-width: 900px) {
+  .navbar .active {
+    border-bottom: 4px solid rgb(1, 255, 255);
+  }
+  .navbar .nav1:hover {
+    border-bottom: 2px solid rgb(1, 255, 255);
+  }
+  .top-btn {
+    position: fixed;
+    left: 91.4%;
+    top: 78%;
+  }
+}
