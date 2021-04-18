@@ -82,6 +82,11 @@
     width: 60%;
     height: 280px;
   }
+  .front-dot {
+    position: relative;
+    bottom: 4.5rem;
+    left: 21rem;
+  }
 }
 
 /* media-rule for 900px */
