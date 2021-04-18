@@ -74,6 +74,14 @@
     position: absolute;
     right: 80px;
   }
+  .about .about-front {
+    width: 100%;
+    height: 250px;
+  }
+  .about-front img{
+    width: 60%;
+    height: 280px;
+  }
 }
 
 /* media-rule for 900px */
