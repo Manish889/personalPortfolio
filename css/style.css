@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,21 +8,25 @@
 
 body {
   text-align: center;
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
 }
 p {
-  font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
 }
+
 
 .homepage h1 {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.02;
+  font-family: 'RocknRoll One', sans-serif;
 }
 
 /* nav-bar */
 .my-nav {
-  background-color: rgba(255, 255, 255, 0.986);
+  color: #f1f1f1;
 }
 .my-name {
   font-size: 2rem;
@@ -32,27 +38,23 @@ p {
   position: relative;
   left: 180px;
 }
-.navbar-text {
-  position: relative;
-  right: 10px;
-  margin-bottom: 7px;
+#navbar-text {
+  color: #f1f1f1;
+  font-weight: 600;
+  background-color: #81b214;
+  padding: 6px;
 }
 .navbar ul {
   padding: 10px 30px;
 }
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   margin: 0 20px;
 }
 
 .rawat {
-  color: #000;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-decoration: underline;
-  font-weight: normal;
-}
-
-.nav-link {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* main-page */
@@ -66,9 +68,10 @@ p {
 
 /* main-section */
 #main {
-  padding-top: 25vh;
+  padding-top: 12vh;
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .homepage {
@@ -76,31 +79,29 @@ p {
   text-align: left;
 }
 
-.homepage-text {
-  padding: 20px;
-  position: relative;
-  top: 90px;
-  text-align: left;
+.front-img img {
+  width: 100%;
+  height: 400px;
 }
+
 
 .main-btn {
   padding: 8px 10px;
-  background-color: #da22ff;
+  background-color: #5c54a4;
   border-radius: 2rem;
   color: #f1f1f1;
   font-size: 1.1rem;
   isolation: isolate;
-  border: 2px solid #da22ff;
+  border: 2px solid #4c408e;
   text-decoration: none;
 }
 .main-btn:hover {
   background-color: #fff;
-  border: 2px solid #da22ff;
+  border: 2px solid #4c408e;
   transition: 400ms;
   color: #000;
   cursor: pointer;
   text-decoration: none;
-  isolation: isolate;
 }
 .homepage a {
   position: relative;
@@ -136,14 +137,12 @@ p {
   width: auto;
   background-color: #9733ee;
   margin-top: 180px;
-  isolation: isolate;
 }
 .line {
   height: 4px;
   max-width: 100%;
   background-color: #da22ff;
   margin-bottom: 3rem;
-  isolation: isolate;
 }
 
 /**********************************/
@@ -151,14 +150,13 @@ p {
 /* grid */
 
 .grid-txt {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
 .dot {
-  color: red;
-  font-size: 2.5rem;
-  isolation: isolate;
+  color: #81b214;
+  font-size: 3.5rem;
 }
 
 /* about-section */
@@ -166,9 +164,11 @@ p {
   margin-bottom: 4rem;
 }
 
-.about .about-txt:nth-child(even) {
+.one {
+  order: 2;
+}
+.about .about-txt {
   text-align: left;
-  margin-left: 80px;
 }
 
 .about h3 {
@@ -177,7 +177,7 @@ p {
 
 .about-txt p {
   font-size: 1.1rem;
-  color: #5f5f5f;
+  color: #f1f1f19d;
 }
 
 /* middle-section */
@@ -190,15 +190,15 @@ p {
 .container .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  border-radius: 1rem;
+  grid-gap: 80px;
 }
 .about .about-front {
-  background: #f1f1f1;
+  height: 370px;
+  width: 500px;
+  background: #bea9de;
   border-radius: 1rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  isolation: isolate;
 }
 .about .about-front:hover {
   cursor: pointer;
@@ -213,62 +213,32 @@ p {
   padding: 30px 10px;
 }
 
-.container img {
+.about-front img{
   width: 100%;
-  height: 270px;
+  height: 280px;
 }
 
-/* carousel */
-.carousel {
-  margin-bottom: 50px;
-}
-.carousel-item {
-  background: #000;
-  height: 32rem;
-  position: relative;
-}
-.carousel-txt {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 50px;
-}
-.overlay-img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.3;
-}
 /* card */
 
 .card-me {
-  background-image: url(../img/bg2.jpg);
-  background-position: center;
-  background-size: contain;
-  width: auto;
+  background-color: #4c408e;
   font-size: 1.2rem;
-  height: auto;
   padding: 15px;
   margin-top: 30px;
-  isolation: isolate;
+  color: #f1f1f1;
 }
 .card-me h3 {
-  background-color: #f1f1f1;
+  background-color: #121212;
   display: inline-block;
   margin: 1rem 1.6rem;
   padding: 5px;
+  color: #f1f1f1;
 }
 
 /* footer */
 .footer {
   padding-top: 60px;
-  background-color: #00303f;
-  isolation: isolate;
+  background-color: #0c1445;
 }
 
 .follow-me {
@@ -283,7 +253,6 @@ p {
 
 .copyright {
   display: flex;
-  color: white;
 }
 .copyright .footer-link {
   margin: 5px 20px;
@@ -298,33 +267,21 @@ p {
 
 input {
   padding: 12px 20px;
+  border-radius: 5rem;
 }
 
 .form {
   width: 50%;
   margin: auto;
   padding: 10px 10px;
-}
-
-#form {
   background-color: #16c79a;
-  border-radius: 0.75rem;
+  border-radius: 1.3rem;
+  color: #fff;
 }
 
 label {
-  font-size: 1rem;
-}
-
-.email {
-  margin-bottom: 7px;
-}
-
-.user-name {
-  margin-bottom: 7px;
-}
-
-.user-message {
-  margin-bottom: 7px;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 /* my-work */
@@ -340,4 +297,3 @@ label {
   width: 50%;
   margin: auto;
 }
-
