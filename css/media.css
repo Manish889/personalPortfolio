@@ -32,7 +32,7 @@
     top: 88%;
   }
   .my-nav {
-    background: #15db6ef1;
+    background: #5c54a4;
   }
   #main {
     padding-top: 1vh;
@@ -80,10 +80,7 @@
 
 @media (min-width: 900px) {
   .navbar .active {
-    border-bottom: 4px solid rgb(1, 255, 255);
-  }
-  .navbar .nav1:hover {
-    border-bottom: 2px solid rgb(1, 255, 255);
+    border-bottom: 4px solid#5c54a4;
   }
   .top-btn {
     position: fixed;
