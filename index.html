@@ -19,9 +19,6 @@
     <!-- animation stylesheet -->
     <link rel="stylesheet" href="css/animation.css" />
 
-    <!-- day-night -->
-    <link rel="stylesheet" href="css/daynight.css" />
-
     <!-- media -->
     <link rel="stylesheet" href="css/media.css" />
     <script
@@ -62,7 +59,7 @@
   <body>
     <header id="head">
       <!-- navbar -->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light my-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark my-nav">
         <div class="container-fluid">
           <a class="navbar-brand my-name" href="#"
             >Manish <span class="rawat">Rawat</span></a
@@ -98,18 +95,10 @@
                 <a class="nav-link nav1" href="resume.html">My Resume</a>
               </li>
             </ul>
-            <span class="navbar-text" style="font-weight: 700">
+            <span id="navbar-text">
               Self-taught Developer
             </span>
           </div>
-        </div>
-        <div class="switch-wrapper">
-          <div class="sun"></div>
-          <div class="toggle-wrapper">
-            <input type="checkbox" id="switch" />
-            <label for="switch" id="switch1">Toggle</label>
-          </div>
-          <div class="moon"></div>
         </div>
       </nav>
     </header>
@@ -144,7 +133,7 @@
             </div>
           </div>
           <div class="col-lg-6 front-img">
-            <img src="img/web-developer.svg" alt=" homepage-image" />
+            <img src="img/man_working.svg" alt=" homepage-image" />
           </div>
         </div>
       </div>
@@ -179,13 +168,11 @@
       <div class="middle-section">
         <!-- about -->
         <div class="container">
-          <div class="row">
             <div class="about">
               <div class="about-front">
-                <img class="about-img" src="img/about.svg" alt="about-image" />
+                <img  src="img/about.svg" alt="about-image" />
               </div>
               <div class="about-txt">
-                <div>
                   <h1>About Me</h1>
                   <h2>Hiii, My name is Manish rawat.</h2>
                   <p>
@@ -194,7 +181,6 @@
                     laborum magni, rem fugiat sit recusandae eaque neque
                     quisquam a nobis autem accusamus animi placeat.
                   </p>
-                </div>
                 <a class="main-btn">Contact Me</a>
               </div>
             </div>
@@ -203,15 +189,12 @@
 
             <!-- work-section -->
             <div class="about">
-              <div class="about-front">
+              <div class="about-front one">
                 <img
-                  class="about-img"
                   src="img/mywork.svg"
-                  alt="mywork-image"
-                />
+                  alt="mywork-image"/>
               </div>
-              <div class="about-txt">
-                <div>
+              <div class="about-txt one1">
                   <h1>My work</h1>
                   <h2>I love to build Website and make them beautiful.</h2>
                   <p>
@@ -220,66 +203,20 @@
                     laborum magni, rem fugiat sit recusandae eaque neque
                     quisquam a nobis autem accusamus animi placeat.
                   </p>
-                </div>
                 <a class="main-btn">Contact Me</a>
               </div>
             </div>
 
             <div class="line"></div>
-            <!-- carousel-slide -->
-            <!-- <div class="carousel slide" id="my-carousel" data-ride="carousel">
-               <ol class="carousel-indicators">
-                 <li class="active" data-target="#my-carousel" data-slide-to="0">
-                 </li>
-                 <li data-target="#my-carousel" data-slide-to="1">
-                </li>
-               </ol>
-               <div class="carousel-inner">
-                 <div class="carousel-item active">
-                   <div class="overlay-img" style="background-image: url(./img/contact.svg);">
-                   </div>
-                   <div class="container carousel-txt">
-                     <h1>Manish</h1>
-                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt enim dignissimos minima! Temporibus deserunt
-                        quos obcaecati id? Odit numquam repellat ipsa atque quaerat blanditiis saepe. Quae dolor facilis vitae doloremque.
-                      </p>
-                      <a href="#" class="btn btn-primary"></a>
-                   </div>
-                 </div>
-                 <div class="carousel-item">
-                  <div class="overlay-img" style="background-image: url(./img/contact.svg);">
-                  </div>
-                  <div class="container carousel-txt">
-                    <h1>Rawat</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt enim dignissimos minima! Temporibus deserunt
-                       quos obcaecati id? Odit numquam repellat ipsa atque quaerat blanditiis saepe. Quae dolor facilis vitae doloremque.
-                     </p>
-                     <a href="#" class="btn btn-lg btn-primary"></a>
-                  </div>
-                </div>
-               </div>
-               <a href="#my-carousel" class="carousel-control-prev" role="button" data-slide="prev">
-                 <span class="sr-only">Previous</span>
-                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               </a>
-               <a href="#my-carousel" class="carousel-control-next" role="button" data-slide="next">
-                <span class="sr-only">Next</span>
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              </a>
-           </div> -->
-            <!-- end-carousel -->
-
+           
             <!-- resume-section -->
             <div class="resume-me about">
               <div class="about-front">
                 <img
-                  class="about-img resume-img"
                   src="img/resume.svg"
-                  alt="resume-image"
-                />
-              </div>
+                  alt="resume-image"/>
+            </div>
               <div class="about-txt">
-                <div>
                   <h1>My Resume</h1>
                   <h2>Please, Have a look at my Resume</h2>
                   <p>
@@ -288,7 +225,6 @@
                     laborum magni, rem fugiat sit recusandae eaque neque
                     quisquam a nobis autem accusamus animi placeat.
                   </p>
-                </div>
                 <a class="main-btn">Contact Me</a>
               </div>
             </div>
@@ -297,14 +233,14 @@
 
             <!-- contact-section -->
             <div class="contact about">
-              <div class="about-front">
+              <div class="about-front one">
                 <img
-                  class="about-img"
+                  
                   src="img/contact.svg"
                   alt="contact-image"
                 />
               </div>
-              <div class="about-txt">
+              <div class="about-txt one1">
                 <h1>Contact Me</h1>
                 <h2>If you Willing to know more about me kindly contact me.</h2>
                 <p>
@@ -314,13 +250,12 @@
                 <a class="main-btn">Contact Me</a>
               </div>
             </div>
-          </div>
         </div>
       </div>
 
       <!-- card for visitor-->
 
-      <div class="card-me container-fluid text-dark">
+      <div class="card-me container-fluid">
         <p>Thank you for visiting my website.</p>
         <button class="btn btn-primary btn-lg">Contact Me</button>
         <h3>Manish Rawat.</h3>
@@ -356,6 +291,7 @@
             <div class="col-lg-6 copyright">
               <p>&copy;Made by Manish Rawat. 2020</p>
               <a class="footer-link" href="#">Privacy</a>
+              <span id="date"></span>
             </div>
           </div>
         </div>
