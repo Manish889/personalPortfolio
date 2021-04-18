@@ -87,6 +87,12 @@
     bottom: 4.5rem;
     left: 21rem;
   }
+  .footer {
+    padding-top: 15px;
+  }
+  .copyright {
+    display: block;
+  }
 }
 
 /* media-rule for 900px */
