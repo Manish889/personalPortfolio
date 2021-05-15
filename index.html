@@ -13,14 +13,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- animation stylesheet -->
-    <link rel="stylesheet" href="css/animation.css" />
-
-    <!-- media -->
-    <link rel="stylesheet" href="css/media.css" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -54,12 +46,24 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- animation stylesheet -->
+    <link rel="stylesheet" href="css/animation.css" />
+
+    <!-- media -->
+    <link rel="stylesheet" href="css/media.css" />
+
+    <!-- Theme -->
+    <link id="theme" rel="stylesheet" href="css/Day-theme.css" />
   </head>
 
   <body>
     <header id="head">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark my-nav">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light my-nav">
         <div class="container-fluid">
           <a class="navbar-brand my-name" href="#"
             >Manish <span class="rawat">Rawat</span></a
@@ -78,7 +82,10 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a
+                  class="nav-link nav-active"
+                  aria-current="page"
+                  href="index.html""
                   >Home</a
                 >
               </li>
@@ -95,9 +102,7 @@
                 <a class="nav-link nav1" href="resume.html">My Resume</a>
               </li>
             </ul>
-            <span id="navbar-text">
-              Self-taught Developer
-            </span>
+            <span id="navbar-text"> Self-taught Developer </span>
           </div>
         </div>
       </nav>
@@ -107,11 +112,13 @@
 
     <div class="top-btn">
       <a href="#">
-        <img src="img/white-arrow-black-circle.png" alt="back-to-top" />
+        <img src="img/black-arrow-white-circle.png" alt="back-to-top" />
       </a>
     </div>
 
-    <!-- day=night-switcher -->
+    <!-- dark-mode -->
+
+    <button id="theme-toggle">Dark mode</button>
 
     <!-- homepage -->
 
@@ -124,10 +131,10 @@
               <span class="front-dot">_</span>
             </h1>
             <h2>Manish Rawat.</h2>
-            <h5>
+            <p>
               hello, I am a Self-taught Developer. <br />
               I was born in Uttarakhand, Currently I am in New Delhi, India.
-            </h5>
+            </p>
             <div>
               <a class="main-btn">Contact Me</a>
             </div>
@@ -160,7 +167,7 @@
             Believe myself<span class="dot">.</span>
           </div>
           <div class="col-sm col-lg-2 grid-txt">
-            Fast Learner<span class="dot">.</span>
+            Quick Learner<span class="dot">.</span>
           </div>
         </div>
       </div>
@@ -168,98 +175,125 @@
       <div class="middle-section">
         <!-- about -->
         <div class="container">
-            <div class="about">
-              <div class="about-front">
-                <img  src="img/about.svg" alt="about-image" />
-              </div>
-              <div class="about-txt">
-                  <h1>About Me</h1>
-                  <h2>Hiii, My name is Manish rawat.</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos ipsam repellat laudantium veniam. Dolorum praesentium
-                    laborum magni, rem fugiat sit recusandae eaque neque
-                    quisquam a nobis autem accusamus animi placeat.
-                  </p>
-                <a class="main-btn">Contact Me</a>
-              </div>
+          <div class="about">
+            <div class="about-front">
+              <img src="img/about.svg" alt="about-image" />
             </div>
-
-            <div class="line"></div>
-
-            <!-- work-section -->
-            <div class="about">
-              <div class="about-front one">
-                <img
-                  src="img/mywork.svg"
-                  alt="mywork-image"/>
-              </div>
-              <div class="about-txt one1">
-                  <h1>My work</h1>
-                  <h2>I love to build Website and make them beautiful.</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos ipsam repellat laudantium veniam. Dolorum praesentium
-                    laborum magni, rem fugiat sit recusandae eaque neque
-                    quisquam a nobis autem accusamus animi placeat.
-                  </p>
-                <a class="main-btn">Contact Me</a>
-              </div>
+            <div class="about-txt">
+              <h1>About Me</h1>
+              <h2>Hiii, My name is Manish rawat.</h2>
+              <p>
+                Hii, I am Manish Rawat. From Uttarakhand. I am self-taught
+                developer. <br />
+                If you interested to know more about me and my background please
+                click on below button. Thank You
+              </p>
+              <a class="main-btn" href="/personalPortfolio-main/about-me.html"
+                >Know More</a
+              >
             </div>
+          </div>
 
-            <div class="line"></div>
-           
-            <!-- resume-section -->
-            <div class="resume-me about">
-              <div class="about-front">
-                <img
-                  src="img/resume.svg"
-                  alt="resume-image"/>
-            </div>
-              <div class="about-txt">
-                  <h1>My Resume</h1>
-                  <h2>Please, Have a look at my Resume</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos ipsam repellat laudantium veniam. Dolorum praesentium
-                    laborum magni, rem fugiat sit recusandae eaque neque
-                    quisquam a nobis autem accusamus animi placeat.
-                  </p>
-                <a class="main-btn">Contact Me</a>
-              </div>
-            </div>
+          <div class="line"></div>
 
-            <div class="line"></div>
-
-            <!-- contact-section -->
-            <div class="contact about">
-              <div class="about-front one">
-                <img
-                  
-                  src="img/contact.svg"
-                  alt="contact-image"
-                />
-              </div>
-              <div class="about-txt one1">
-                <h1>Contact Me</h1>
-                <h2>If you Willing to know more about me kindly contact me.</h2>
-                <p>
-                  I will always waiting for your message. And I would be happy
-                  to work with you. How can you contact me. instagram. facebook.
-                </p>
-                <a class="main-btn">Contact Me</a>
-              </div>
+          <!-- work-section -->
+          <div class="about">
+            <div class="about-front one">
+              <img src="img/mywork.svg" alt="mywork-image" />
             </div>
+            <div class="about-txt one1">
+              <h1>My work</h1>
+              <h2>I love to build Website and make them beautiful.</h2>
+              <p>Hii viewer, Please look my projects.</p>
+              <a class="main-btn" href="/personalPortfolio-main/my-work.html"
+                >View my projects</a
+              >
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <!-- resume-section -->
+          <div class="resume-me about">
+            <div class="about-front">
+              <img src="img/resume.svg" alt="resume-image" />
+            </div>
+            <div class="about-txt">
+              <h1>My Resume</h1>
+              <h2>Please, Have a look at my Resume</h2>
+              <p>
+                I am A self-taught developer. Althought I have not any tech
+                degree. But I think a web developer doesn't need any degree.
+                <br />
+                Kindly do not think that I can't know think because I have not
+                degree. And Please look my resume below.
+              </p>
+              <a class="main-btn" href="/personalPortfolio-main/resume.html"
+                >Visit here</a
+              >
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <!-- contact-section -->
+          <div class="contact about">
+            <div class="about-front one">
+              <img src="img/contact.svg" alt="contact-image" />
+            </div>
+            <div class="about-txt one1">
+              <h1>Contact Me</h1>
+              <h2>If you Willing to know more about me kindly contact me.</h2>
+              <p>
+                I will always waiting for your message. And I would be happy to
+                work with you. How can you contact me. instagram. facebook.
+              </p>
+              <a class="main-btn" href="/personalPortfolio-main/contact-me.html"
+                >Contact Me</a
+              >
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="line"></div>
+
+      <section id="skill">
+        <div class="skill-whole pb-3">
+          <div class="skill-head">
+            <h3>These some of my skills >></h3>
+            <p>I am learning skills daily</p>
+          </div>
+          <div class="skill-box">
+            <div class="box1 box-size p-3">
+              <i class="fab d-block fa-html5 fa-3x pb-2"></i>
+              
+            </div>
+
+            <div class="box2 box-size p-3">
+              <i class="fab d-block fa-css3 fa-3x pb-2"></i>
+             
+            </div>
+
+            <div class="box3 box-size p-3">
+              <i class="fab d-block fa-bootstrap fa-3x pb-2"></i>
+             
+            </div>
+
+            <div class="box4 box-size p-3">
+              <i class="fab d-block fa-js fa-3x pb-2"></i>
+              
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- card for visitor-->
 
       <div class="card-me container-fluid">
         <p>Thank you for visiting my website.</p>
-        <button class="btn btn-primary btn-lg">Contact Me</button>
-        <h3>Manish Rawat.</h3>
-        <h3>Motivated self taught developer</h3>
+        <p class="mt-2">Motivated self taught developer</p>
+        <a href="#" class="main-btn">Contact Me</a>
       </div>
     </section>
 
@@ -275,23 +309,24 @@
                 class="footer-link"
                 href="https://www.linkedin.com/in/manish-rawat-77b045190/"
               >
-                <i class="fab fa-linkedin"></i></a
-              >&nbsp; &nbsp;
+                <i class="fab fa-linkedin"></i
+              ></a>
               <a class="footer-link" href="#">
-                <i class="fab fa-instagram"></i></a
-              >&nbsp; &nbsp;
+                <i class="fab fa-instagram"></i
+              ></a>
               <a class="footer-link" href="https://github.com/Manish889"
-                ><i class="fab fa-github"></i></a
-              >&nbsp; &nbsp;
+                ><i class="fab fa-github"></i
+              ></a>
               <a class="footer-link" href="#"
                 ><i class="fab fa-whatsapp"></i
               ></a>
             </div>
 
             <div class="col-lg-6 copyright">
-              <p>&copy;Made by Manish Rawat. 2020</p>
-              <a class="footer-link" href="#">Privacy</a>
-              <span id="date"></span>
+              <p>
+                <span id="month"></span> / <span id="date"></span> | &copy;Made
+                by Manish Rawat.
+              </p>
             </div>
           </div>
         </div>
@@ -300,7 +335,7 @@
 
     <!-- revail-txt -->
     <script src="js/scroll-out.js"></script>
-    <script type="text/javascript">
+    <script>
       ScrollOut({
         targets: "h1,h2,p,a",
       });
